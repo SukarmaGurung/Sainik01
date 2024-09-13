@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Add.css";
 import { assets } from "../../assets/assets";
+import axios from 'axios'
 
 const Add = () => {
+  const url = 'http://localhost:3000';
   const [image,setImage] = useState(false);
   const [data,setData] = useState ({
     name:"",
@@ -16,10 +18,33 @@ const Add = () => {
     setData(data=>({...data,[name]:value}))
 
   }
-  useEffect((=>))
+  const onSubmitHandler = async(event) =>{
+    event.preventDefault();
+
+    const formData = new FormData();
+    formData.append("name",data.name)
+    formData.append("description",data.description)
+    formData.append("price",Number(data.price))
+    formData.append("category",data.category)
+    formData.append("image",image)
+
+    const response = await axios.post(`${url}/api/product/add`,formData);
+    if(response.data.success){
+     setData({
+      name:"",
+      description:"",
+      price:"",
+      category:"Cement"
+     })
+     setImage(false)
+    }
+    else{
+
+    }
+  }
   return (
     <div className="add">
-      <form className="flex-col">
+      <form className="flex-col" onSubmit={onSubmitHandler}>
         <div className="add-image-upload flex-col">
           <p>Upload Image</p>
           <label htmlFor="image">
