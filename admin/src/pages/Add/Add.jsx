@@ -16,6 +16,7 @@ const Add = () => {
     setData(data=>({...data,[name]:value}))
 
   }
+  useEffect((=>))
   return (
     <div className="add">
       <form className="flex-col">
@@ -32,7 +33,7 @@ const Add = () => {
         </div>
         <div className="add-product-description flex col">
           <p> Product Description</p>
-          <textarea
+          <textarea onChange={onChangeHandler} value={data.description}
             name="description"
             rows="6"
             placeholder="Write content here"
@@ -42,7 +43,7 @@ const Add = () => {
         <div className="add-category-price">
           <div className="add-category  flex-col">
             <p>Product Category</p>
-            <select name="category">
+            <select  onChange={onChangeHandler} name="category">
               <option value="Toilet">Toilet</option>
               <option value="Bathtub">Bathtub</option>
               <option value="Marble">Marble</option>
@@ -55,7 +56,7 @@ const Add = () => {
           </div>
           <div className="add-price flex-col">
             <p>Product Price</p>
-            <input type="Number" name="price" placeholder="Rs 60" />
+            <input onChange={onChangeHandler} value={data.price} type="Number" name="price" placeholder="Rs 60" />
           </div>
         </div>
         <button type="submit" className="add-btn">
