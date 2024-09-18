@@ -4,6 +4,7 @@ import { product_list, product_list_description } from "../assets/assets";
 export const StoreContext = createContext(null);
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
+  const url="http://localhost:3000"
   const addToCart = (productId) => {
     if (!cartItems[productId]) {
       setCartItems((prev) => ({ ...prev, [productId]: 1 }));
@@ -45,6 +46,7 @@ const StoreContextProvider = (props) => {
     addToCart,
     removeFromCart,
     getTotalCartAmount,
+    url
   }
   return (
     <StoreContext.Provider value={contextValue}>
