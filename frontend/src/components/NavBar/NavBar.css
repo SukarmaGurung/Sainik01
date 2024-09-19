@@ -64,7 +64,7 @@
     transition: 0.3s;
 }
 .navbar button:hover{
-    background-color:lightblue;
+    background-color:burlywood;
 }
 .navbar .active{
     padding-bottom: 2px;
