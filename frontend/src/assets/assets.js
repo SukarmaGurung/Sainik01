@@ -48,9 +48,9 @@ import li2 from './li2.png';
 import wa2 from './wa2.png';
 
 
-import product_1 from "./product_1.png";
-import product_2 from "./product_2.png";
-import product_3 from "./product_3.png";
+import profile from "./profile.png";
+import bagy from "./bagy.png";
+import logout from "./logout.png";
 import product_4 from "./product_4.png";
 import product_5 from "./product_5.png";
 import product_6 from "./product_6.png";
@@ -153,7 +153,10 @@ fb1,
 li2,wa2,
 app2,
 play1,
-rm1
+rm1,
+profile,
+bagy,
+logout
 
 };
 export const product_list = [
