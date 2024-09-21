@@ -1,12 +1,18 @@
 import React, { useContext, useState } from 'react'
 import'./NavBar.css'
 import { assets } from '../../assets/assets'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { StoreContext } from '../../context/StoreContext'
 
 const Navbar = ({setShowLogin}) => {
     const [menu,setMenu] = useState("Home")
     const {getTotalCartAmount,token,setToken} = useContext(StoreContext);
+    const navigate = useNavigate();
+    const logout=() =>{
+      localStorage.removeItem("token")
+      setToken("");
+      navigate("/");
+    }
   return (
     <div className='navbar'>
        
@@ -27,9 +33,9 @@ const Navbar = ({setShowLogin}) => {
         <img src={assets.profile} alt="" width={50} height={50} />
         
         <ul className="nav-profile-dropdown">
-          <li><img src={assets.bagy} alt=""  width={50} height={50}/><p>Orders</p></li>
+          <li><img src={assets.bagy} alt=""  width={20} height={20}/><p>Orders</p></li>
           <hr/>
-          <li><img src={assets.logout} alt="" width={50} height={50} /><p>Logout</p></li>
+          <li><img src={assets.logout} alt="" width={20} height={20} /><p>Logout</p></li>
         </ul>
         
         </div>}
