@@ -176,25 +176,25 @@ export const product_list_description = [
     id: 1,
     name: "Shower",
     image: rshower ,
-    price: " 19550.00",
+    price:  19550,
     description:
-      "Tilt window providing ventilation and easy cleaning.",
+      "Amazing Shower .",
     category: "Shower",
   },
   {
     id: 2,
     name: "Circle Shower",
     image: circleshower,
-    price: '43390.0',
-    description: "High-quality ceramic toilet for your bathroom.",
+    price: 43390,
+    description: "High-quality circle shower for your bathroom.",
     category: "Shower",
   },
   {
     id: 3,
     name: "Flat Shower",
     image: flatshower,
-    price: ' 13500.0',
-    description: "Elegant wash basin for a modern bathroom.",
+    price:  13500,
+    description: "Elegant flat shower for a modern bathroom.",
     category: "Shower",
   },
 
@@ -202,8 +202,8 @@ export const product_list_description = [
     id: 4,
     name: 'Black Shower',
     image: blackshower,
-    price: ' 14000.00',
-    description: 'Flat wash basin perfect for contemporary bathrooms.',
+    price:  14000,
+    description: 'Black Shower perfect for contemporary bathrooms.',
     category: 'Shower',
   },
 
@@ -214,7 +214,7 @@ export const product_list_description = [
     id: 5,
     name: 'Square Basin',
     image: basin11,
-    price: '15000.00',
+    price: 15000,
     description: 'Eco-friendly wooden wash basin with a unique look.',
     category: 'Basin'
   },
@@ -222,24 +222,24 @@ export const product_list_description = [
     id: 6,
     name: 'One way Basin',
     image: basinn_2,
-    price: ' 250060.00',
-    description: 'Complete attach bathroom set for convenience and style.',
+    price: 25006,
+    description: 'Complete one way basin set for convenience bathroom and style.',
     category: 'Basin'
   },
   {
     id: 7,
     name: 'Oval Basin',
     image: ovalllbasin,
-    price: ' 10000.00',
-    description: 'Compact and modern toilet for efficient bathroom use.',
+    price:  10000,
+    description: 'Compact and modern oval basin for efficient bathroom use.',
     category: 'Basin'
   },
   {
     id: 8,
     name: 'Rec Basin',
     image: product_4,
-    price: ' 18000.00',
-    description: 'Innovative foldable toilet for space-saving solutions.',
+    price: 18000,
+    description: 'Innovative basin for space-saving solutions.',
     category: 'Basin'
   },
 
@@ -249,15 +249,15 @@ export const product_list_description = [
     id: 9,
     name: 'Gold Marble',
     image: gold,
-    price: ' 19750.00',
-    description: 'Spacious double toilet designed for bathrooms.',
+    price:  19750,
+    description: 'Spacious marble designed for bathrooms.',
     category: 'Marble'
   },
   {
     id: 10,
     name: 'Pink Marble',
     image: goldd,
-    price: ' 2010.00',
+    price: 2010,
     description: 'Marble design for an elegant bathroom finish.',
     category: 'Marble'
   },
@@ -265,16 +265,16 @@ export const product_list_description = [
     id: 11,
     name: 'Black Marble',
     image: golddd,
-    price: ' 23100.00',
-    description: 'Curved bathtub for a comfortable and relaxing bath experience.',
+    price:  23100,
+    description: 'Curved black marble for a comfortable and relaxing bath experience.',
     category: 'Marble'
   },
   {
     id: 12,
     name: 'Green Marble',
     image: goldddddd,
-    price: ' 22400.00',
-    description: 'Oval bathtub with built-in lighting for a spa-like atmosphere.',
+    price: 22400,
+    description: ' Marble with built-in lighting for a spa-like atmosphere.',
     category: 'Marble'
   },
 
@@ -283,32 +283,32 @@ export const product_list_description = [
     id: 13,
     name: 'Bathtub',
     image: bathtub,
-    price: ' 2010.00',
-    description: 'Marble design for an elegant bathroom finish.',
+    price: 2010,
+    description: 'Bathtub design for an elegant bathroom finish.',
     category: 'Bathtub'
   },
   {
     id: 14,
     name: 'Zag Bathtub',
     image: bathtub1111,
-    price: ' 23100.00',
-    description: 'Curved bathtub for a comfortable and relaxing bath experience.',
+    price: 23100,
+    description: 'Zag bathtub for a comfortable and relaxing bath experience.',
     category: 'Bathtub'
   },
   {
     id: 15,
     name: ' Plain Bathtub',
     image: bathtub10,
-    price: ' 22400.00',
-    description: 'Oval bathtub with built-in lighting for a spa-like atmosphere.',
+    price: 22400,
+    description: 'Plain bathtub with built-in lighting for a spa-like atmosphere.',
     category: 'Bathtub'
   },
   {
     id: 16,
     name: ' U Bathtub',
     image: bathtub101,
-    price: ' 2010.00',
-    description: 'Marble design for an elegant bathroom finish.',
+    price: 2010,
+    description: 'Bathtub design for an elegant bathroom finish.',
     category: 'Bathtub'
   },
 
@@ -318,32 +318,32 @@ export const product_list_description = [
     id: 17,
     name: 'Elgin Moroccan',
     image: tile101,
-    price: ' 23100.00',
-    description: 'Curved bathtub for a comfortable and relaxing bath experience.',
+    price: 23100,
+    description: 'Tile for a comfortable and relaxing bath experience.',
     category: 'Tile'
   },
   {
     id: 18,
     name: 'Zigzag',
     image: tile102,
-    price: ' 22400.00',
-    description: 'Oval bathtub with built-in lighting for a spa-like atmosphere.',
+    price: 22400,
+    description: 'Tile  with built-in lighting for a spa-like atmosphere.',
     category: 'Tile'
   },
   {
     id: 19,
     name: 'Square Pair',
     image: tile103,
-    price: ' 22400.00',
-    description: 'Oval bathtub with built-in lighting for a spa-like atmosphere.',
+    price:22400,
+    description: 'Square pair with built-in lighting for a spa-like atmosphere.',
     category: 'Tile'
   },
   {
     id: 20,
     name: 'Wood Tile',
     image: tile105,
-    price: '22400.00',
-    description: 'Oval bathtub with built-in lighting for a spa-like atmosphere.',
+    price: 22400,
+    description: 'Tile with built-in lighting for a spa-like atmosphere.',
     category: 'Tile'
   },
 
@@ -353,32 +353,32 @@ export const product_list_description = [
     id: 21,
     name: 'Small Toilet',
     image: t1,
-    price: '22400.00',
-    description: 'Oval bathtub with built-in lighting for a spa-like atmosphere.',
+    price: 22400,
+    description: 'Toilet with built-in lighting for a spa-like atmosphere.',
     category: 'Latrine'
   },
   {
     id: 22,
     name: 'Fold Toilet',
     image: t2,
-    price: '22400.00',
-    description: 'Oval bathtub with built-in lighting for a spa-like atmosphere.',
+    price: 22400,
+    description: 'Fold toilet with built-in lighting for a spa-like atmosphere.',
     category: 'Latrine'
   },
   {
     id: 23,
     name: 'Toilet',
     image: t4,
-    price: '22400.00',
-    description: 'Oval bathtub with built-in lighting for a spa-like atmosphere.',
+    price: 22400,
+    description: 'Toilet  with built-in lighting for a spa-like atmosphere.',
     category: 'Latrine'
   },
   {
     id: 24,
-    name: 'Oval Bathtub with Light',
+    name: 'Toilet',
     image: t01,
-    price: '22400.00',
-    description: 'Oval bathtub with built-in lighting for a spa-like atmosphere.',
+    price: 22400,
+    description: 'Toilet with built-in lighting for a spa-like atmosphere.',
     category: 'Latrine'
   },
 
@@ -388,24 +388,24 @@ export const product_list_description = [
     id: 25,
     name: 'Tap',
     image: w6,
-    price: '22400.00',
-    description: 'Oval bathtub with built-in lighting for a spa-like atmosphere.',
+    price: 22400,
+    description: 'Tap with built-in lighting for a spa-like atmosphere.',
     category: 'Double Tap'
   },
   {
     id: 26,
     name: 'Tap',
     image: w5,
-    price: ' 22400.00',
-    description: 'Oval bathtub with built-in lighting for a spa-like atmosphere.',
+    price: 22400,
+    description: 'Tap  with built-in lighting for a spa-like atmosphere.',
     category: 'Double Tap'
   },
   {
     id: 27,
     name: 'Tap',
     image: w2,
-    price: ' 22400.00',
-    description: 'Oval bathtub with built-in lighting for a spa-like atmosphere.',
+    price: 22400,
+    description: 'Tap with built-in lighting for a spa-like atmosphere.',
     category: 'Double Tap'
   },
   
@@ -413,8 +413,8 @@ export const product_list_description = [
     id: 28,
     name: 'Tap',
     image: w4,
-    price: '22400.00',
-    description: 'Oval bathtub with built-in lighting for a spa-like atmosphere.',
+    price: 22400,
+    description: 'Tap with built-in lighting for a spa-like atmosphere.',
     category: 'Double Tap'
   },
 
@@ -423,16 +423,16 @@ export const product_list_description = [
     id: 29,
     name: 'Iron',
     image: s5,
-    price: '22400.00',
-    description: 'Oval bathtub with built-in lighting for a spa-like atmosphere.',
+    price: 22400,
+    description: 'Rod with built-in lighting for a spa-like atmosphere.',
     category: 'Iron Rod'
   },
   {
     id: 30,
     name: 'Iron',
     image: s4,
-    price: '22400.00',
-    description: 'Oval bathtub with built-in lighting for a spa-like atmosphere.',
+    price: 22400,
+    description: 'Rod with built-in lighting for a spa-like atmosphere.',
     category: 'Iron Rod'
   },
 
@@ -444,16 +444,16 @@ export const product_list_description = [
     id: 31,
     name: 'Iron Tube',
     image: s3,
-    price: ' 22400.00',
-    description: 'Oval bathtub with built-in lighting for a spa-like atmosphere.',
+    price: 22400,
+    description: 'Rod with built-in lighting for a spa-like atmosphere.',
     category: 'Iron Rod'
   },
   {
     id: 32,
     name: 'Iron',
     image: s1,
-    price: ' 22400.00',
-    description: 'Oval bathtub with built-in lighting for a spa-like atmosphere.',
+    price: 22400,
+    description: 'Rod with built-in lighting for a spa-like atmosphere.',
     category: 'Iron Rod'
   },
   
@@ -462,8 +462,8 @@ export const product_list_description = [
     id: 33,
     name: 'Cement',
     image: c5,
-    price: '22400.00',
-    description: 'Oval bathtub with built-in lighting for a spa-like atmosphere.',
+    price: 22400,
+    description: 'Cement with built-in lighting for a spa-like atmosphere.',
     category: 'Cement'
   },
 
@@ -474,24 +474,24 @@ export const product_list_description = [
     id: 34,
     name: 'Cement',
     image: c5,
-    price: ' 22400.00',
-    description: 'Oval bathtub with built-in lighting for a spa-like atmosphere.',
+    price: 22400,
+    description: 'Cement with built-in lighting for a spa-like atmosphere.',
     category: 'Cement'
   },
   {
     id: 35,
     name: 'Cement',
     image: c2,
-    price: ' 22400.00',
-    description: 'Oval bathtub with built-in lighting for a spa-like atmosphere.',
+    price: 22400,
+    description: 'Cement with built-in lighting for a spa-like atmosphere.',
     category: 'Cement'
   },
   {
     id: 36,
     name: 'Cement',
     image: c2,
-    price: ' 22400.00',
-    description: 'Oval bathtub with built-in lighting for a spa-like atmosphere.',
+    price: 22400,
+    description: 'Cement with built-in lighting for a spa-like atmosphere.',
     category: 'Cement'
   },
   

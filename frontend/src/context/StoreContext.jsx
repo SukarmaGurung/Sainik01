@@ -1,13 +1,15 @@
 import { createContext, useEffect, useState } from "react";
 import axios from 'axios'
+import { product_list_description } from "../assets/assets";
 
 
-export const StoreContext = createContext(null);
+export const StoreContext = createContext(null)
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
   const url="http://localhost:3000"
   const [token,setToken] = useState("");
-  const [product_list_description,setProductList] = useState([])
+  const [product_list_description,setProductListDescription] = useState([])
+ 
 
   const addToCart = (productId) => {
     if (!cartItems[productId]) {
@@ -23,38 +25,36 @@ const StoreContextProvider = (props) => {
   
   const getTotalCartAmount = () => {
     let totalAmount = 0;
-    console.log("cart ittem = ", cartItems);
+    
     for (const item in cartItems) {
-      // if (cartItems[item.id] > 0) {
+       if (cartItems[item.id] > 0) {
       console.log("product_list_description", product_list_description);
       console.log("item = ", item);
       let itemInfo = product_list_description.find(
         (product) => product.id == item
-      );
-
-      console.log(typeof item);
-
-      console.log("item info = ", itemInfo);
+      )
       totalAmount += itemInfo.price * cartItems[item];
-      console.log("totalAmount == ", totalAmount);
-      // }
+     
+       }
     }
+  
     return totalAmount;
   }
-  const fetchProductList = async() =>{
-    const response = await axios.get(url + "/api/product/list");
-    setProductList(response.data.data)
+  const fetchProductList = async () =>{
+    const response = await axios.get(url+"/api/product/list");
+    setProductListDescription(response.data.data)
   }
   useEffect(()=>{
     
-    async function loadData(){ 
+    async function loadData(){
       await fetchProductList();
-      if (localStorage.getItem("token")) {
-        setToken(localStorage.getItem("token"));
+      if(localStorage.getItem("token")){
+        setToken(localStorage.getItem("token"))
       }
     }
     loadData();
   },[])
+  
 
 
   const contextValue = {
