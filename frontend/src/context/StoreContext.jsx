@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import axios from 'axios'
-import { product_list_description } from "../assets/assets";
+
 
 
 export const StoreContext = createContext(null)
@@ -21,25 +21,31 @@ const StoreContextProvider = (props) => {
   const removeFromCart = (productId) => {
     setCartItems((prev) => ({ ...prev, [productId]: prev[productId] - 1 }));
   };
-
+  console.log('Cart Items:', cartItems);
+  console.log('Product List:', product_list_description);
+  
   
   const getTotalCartAmount = () => {
-    let totalAmount = 0;
+    let totalAmount= 0;
     
     for (const item in cartItems) {
-       if (cartItems[item.id] > 0) {
-      console.log("product_list_description", product_list_description);
-      console.log("item = ", item);
-      let itemInfo = product_list_description.find(
-        (product) => product.id == item
-      )
+       if (cartItems[item] > 0) {
+      let itemInfo = product_list_description.find((product) => product._id === (item)
+      );
+      if (itemInfo) {
       totalAmount += itemInfo.price * cartItems[item];
+      }
+    
+      
+      
      
        }
     }
   
     return totalAmount;
   }
+  
+
   const fetchProductList = async () =>{
     const response = await axios.get(url+"/api/product/list");
     setProductListDescription(response.data.data)
