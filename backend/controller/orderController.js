@@ -1,9 +1,9 @@
 import orderModel from "../models/orderModel.js";
 import userModel from "../models/userModel.js";
-import Stripe from "stripe";
+//import Stripe from "stripe";
 
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
+const secretKey = process.env.ESEWA_SECRET_KEY
 
 // placing userorder from frontend
 const placeOrder = async (req,res) =>{
@@ -46,7 +46,7 @@ const placeOrder = async (req,res) =>{
         line_items:line_items,
         mode:"Payment",
         sucess_url:`${frontend_url}/verify?success=true&orderId=${newOrder._id}`,
-        camcel_url:`${frontend_url}/verify?success=false&orderId=${newOrder._id}`,
+        cancel_url:`${frontend_url}/verify?success=false&orderId=${newOrder._id}`,
     })
       res.json({success:true,session_url:session.url})
     } catch (error) {
@@ -56,3 +56,5 @@ const placeOrder = async (req,res) =>{
     }
 }
 export {placeOrder}
+
+
