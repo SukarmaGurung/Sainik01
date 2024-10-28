@@ -1,9 +1,9 @@
 import orderModel from "../models/orderModel.js";
 import userModel from "../models/userModel.js";
-//import Stripe from "stripe";
+import Stripe from "stripe";
 
 
-const secretKey = process.env.ESEWA_SECRET_KEY
+const stripe = new Stripe( process.env.STRIPE_SECRET_KEY)
 
 // placing userorder from frontend
 const placeOrder = async (req,res) =>{
@@ -37,7 +37,7 @@ const placeOrder = async (req,res) =>{
             product_data:{
                 name:"Delivery Charges"
               },
-              unit_Amount: 100* 100
+              unit_Amount: 100 * 100
         },
         quantity:1
     })   
